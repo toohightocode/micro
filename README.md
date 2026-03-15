@@ -1,6 +1,6 @@
 # micro
-A lightweight CLI text file viewer built with C++ and ncurses.
-This simple tool helps visualize text files quickly without the need of having syntax highlighting, comples editing stuff or any other performance killer features.
+A lightweight CLI text file viewer built with C++ around ncurses focused; built for MacOS only.
+This simple tool helps visualize text files quickly without the need of having syntax highlighting, complex editing stuff or any other performance killer features.
 
 Features:
 - Blazing fast buffering load
