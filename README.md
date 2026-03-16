@@ -8,7 +8,8 @@ Features:
 - line count indicator
 - title bar with filename
 
-<img width="616" height="513" alt="micro" src="https://github.com/user-attachments/assets/7475f8cd-1b5c-455f-9659-371fa0775b09" />
+<img width="808" height="647" alt="Screenshot 2026-03-16 at 16 19 33" src="https://github.com/user-attachments/assets/6b9af7cc-eef6-4f09-abb4-cf1c9bcf1ca4" />
+
 
 # Usage
 open a file with `micro [filename]` <br>
