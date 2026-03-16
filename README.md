@@ -13,7 +13,7 @@ Features:
 # Usage
 open a file with `micro [filename]` <br>
 `q` or `Q` - quit <br>
-use directional arrows to move
+use directional arrows to move, or scroll if terminal supports it
 
 # Installation
 <details>
@@ -24,9 +24,10 @@ Download latest release
 <details>
 <summary>Linux</summary>
 <ol>
-  <li>Download source code</li>
-  <li>make sure ncurses library is installed above src folder</li>
-  <li>compile with <code>g++ src/main.cpp -lncurses -o micro</code></li>
+  <li>Download the repository</li>
+  <li>download and compile the latest ncurses library version</li>
+  <li>run `make`</li>
+  <li>The compiled build can be found in `/build`</code></li>
 </ol>
   
 </details>
