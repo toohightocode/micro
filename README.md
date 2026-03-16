@@ -4,7 +4,7 @@ This simple tool helps visualize text files quickly without the need of having s
 
 Features:
 - Blazing fast buffering load
-- low ram usage (~2Mb)
+- low ram usage (as low as ~2Mb)
 - line count indicator
 - title bar with filename
 
