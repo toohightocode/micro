@@ -7,7 +7,6 @@
 #include <algorithm>
 
 
-
 int main(int argc, char* argv[]) {
     if (argc > 1) {
         filename = argv[1];
@@ -27,18 +26,19 @@ int main(int argc, char* argv[]) {
     getmaxyx(stdscr, h, w);
 
     topbar = newwin(1, w, 0, 0);
-    body = newwin(h - 2, w, 2, 0);
+    body = newwin(h - 2, w-num_digits(buffer.size()) - 1, 2, num_digits(buffer.size()) + 2);
+    linenumbers = newwin(h, num_digits(buffer.size()) + 1, 2, 0);
     keypad(body, TRUE);
 
     wrefresh(stdscr);
     update_topbar(topbar);
     print_to_body(body);
+    print_linenumbers(linenumbers);
 
     signal(SIGWINCH, window_handler);
 
     // Main event loop
     while (true) {
-        // Check and handle resize immediately
         if (g_need_resize) {
             g_need_resize = false;
             window_resize();
@@ -62,3 +62,4 @@ int main(int argc, char* argv[]) {
     endwin();
     return 0;
 }
+

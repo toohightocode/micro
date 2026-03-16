@@ -2,6 +2,7 @@
 
 WINDOW* topbar = nullptr;
 WINDOW* body = nullptr;
+WINDOW* linenumbers = nullptr;
 std::atomic<bool> g_need_resize{false};
 std::vector<std::string> buffer;
 std::string filename;

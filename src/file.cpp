@@ -5,7 +5,7 @@
 void load_file(std::vector<std::string>& buffer, const std::string& filename) {
     std::ifstream file(filename);
     if (!file.is_open()) {
-        std::cerr << "Error: Could not open file " << filename << "\n";
+        std::cerr << "Error: Could not open file or is empty: " << filename << "\n";
         return;
     }
 

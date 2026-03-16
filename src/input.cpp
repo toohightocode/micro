@@ -1,4 +1,5 @@
 #include "globals.h"
+#include "window.h"
 #include "input.h"
 #include <algorithm>
 
@@ -24,6 +25,7 @@ void scroll_up(WINDOW* body, WINDOW* topbar) {
     }
     print_to_body(body);
     update_topbar(topbar);
+    print_linenumbers(linenumbers);
 }
 
 void scroll_down(WINDOW* body, WINDOW* topbar) {
@@ -34,6 +36,7 @@ void scroll_down(WINDOW* body, WINDOW* topbar) {
     }
     print_to_body(body);
     update_topbar(topbar);
+    print_linenumbers(linenumbers);
 }
 
 void scroll_left(WINDOW* body, WINDOW* topbar) {
