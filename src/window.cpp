@@ -57,7 +57,7 @@ void print_to_body(WINDOW* body) {
 void update_topbar(WINDOW* topbar) {
     werase(topbar);
 
-    std::string version = "micro v1.2.1";
+    std::string version = "micro v1.2.2";
     mvwprintw(topbar, 0, w - version.length(), "%s", version.c_str());
 
     int body_height = getmaxy(body);
