@@ -8,28 +8,23 @@ void window_handler(int sig) {
     g_need_resize = true;
 }
 
-// Resize windows
 void window_resize() {
     endwin();
     refresh();
     
     getmaxyx(stdscr, h, w);
     
-    // Minimum size protection
     if (h < 3 || w < 10) return;
     
-    // Delete old windows
     delwin(topbar);
     delwin(body);
     delwin(linenumbers);
     
-    // Recreate with new dimensions
     topbar = newwin(1, w, 0, 0);
     body = newwin(h - 2, w-num_digits(buffer.size()) - 1, 2, num_digits(buffer.size()) + 2);
     linenumbers = newwin(h, num_digits(buffer.size()) + 1, 2, 0);
     keypad(body, TRUE);
     
-    // Redraw everything
     clear();
     refresh();
     update_topbar(topbar);
