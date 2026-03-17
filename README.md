@@ -5,7 +5,7 @@ This simple tool helps visualize text files quickly without the need of having s
 Features:
 - Blazing fast buffering load
 - low ram usage (as low as ~2Mb)
-- line count indicator
+- line count
 - title bar with filename
 
 <img width="808" height="647" alt="Screenshot 2026-03-16 at 16 19 33" src="https://github.com/user-attachments/assets/6b9af7cc-eef6-4f09-abb4-cf1c9bcf1ca4" />
