@@ -11,7 +11,10 @@ int main(int argc, char* argv[]) {
     if (argc > 1) {
         filename = argv[1];
         load_file(buffer, argv[1]);
-        if (buffer.empty()) return 0;
+        if (buffer.empty()) {
+            std::cerr << "Error: Could not open file or is empty: " << filename << "\n";
+            return 1;
+        }
     } else {
         std::cout << "No file provided to open\nusage: micro [filename]\nwhere [filename] the base file name with extension" << std::endl;
         return 0;
