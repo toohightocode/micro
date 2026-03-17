@@ -19,7 +19,11 @@ use directional arrows to move, or scroll if terminal supports it
 # Installation
 <details>
 <summary>MacOS</summary>
-Download latest release
+<ol>
+  <li>Download the latest release</li>
+  <li>Put the binary wherever you want</li>
+  <li>add alias pointing to binary in <code>~/.zshrc</code></li>
+</ol>
 </details>
 
 <details>
@@ -27,8 +31,8 @@ Download latest release
 <ol>
   <li>Download the repository</li>
   <li>download and compile the latest ncurses library version</li>
-  <li>run `make`</li>
-  <li>The compiled build can be found in `/build`</code></li>
+  <li>run <code>make</code></li>
+  <li>The compiled build can be found in <code>/build</code></li>
 </ol>
   
 </details>
